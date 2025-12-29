@@ -53,6 +53,24 @@
         .aos-animate {
           pointer-events: auto;
         }
+        
+        /* Bank logo sliding animation */
+        @keyframes slide {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-66.66%);
+          }
+        }
+        
+        .animate-slide {
+          animation: slide 8s linear infinite;
+        }
+        
+        .animate-slide:hover {
+          animation-play-state: paused;
+        }
     </style>
 <script type="importmap">
 {

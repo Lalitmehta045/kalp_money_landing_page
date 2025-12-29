@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "2.3.4",
+    "dotenv": "^8.2.0",
+    "lucide-react": "0.475.0",
+    "node-fetch": "^3.3.2",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "lucide-react": "0.475.0",
-    "aos": "2.3.4",
     "recharts": "2.15.0"
   },
   "devDependencies": {

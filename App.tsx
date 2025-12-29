@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Hero from './components/SliderHero';
 import TrustBar from './components/TrustBar';
 import Services from './components/Services';
 import LoanCalculator from './components/LoanCalculator';

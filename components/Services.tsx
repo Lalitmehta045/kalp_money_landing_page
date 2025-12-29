@@ -75,26 +75,22 @@ const Services: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s, i) => (
-            <div key={i} className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay={i * 50}>
+            <div key={i} className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-lg transition-all group" data-aos="fade-up" data-aos-delay={i * 50}>
               <div className="flex justify-between items-start mb-6">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-brand-light text-[#204782]">
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-[#E16137]/10 text-[#E16137]">
                   <s.icon className="w-6 h-6" />
                 </div>
                 <div className="text-right">
-                  <div className="text-[#204782] font-bold">{s.rate}</div>
+                  <div className="text-[#224483] font-bold">{s.rate}</div>
                 </div>
               </div>
-              <h4 className="text-lg font-bold text-slate-800 mb-3 group-hover:text-[#204782] transition-colors">{s.title}</h4>
+              <h4 className="text-lg font-bold text-slate-800 mb-3 group-hover:text-[#E16137] transition-colors">{s.title}</h4>
               <p className="text-sm text-slate-500 mb-6 line-clamp-2">{s.desc}</p>
               
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="flex flex-wrap gap-2">
                 {s.tags.map((tag, j) => (
-                  <span key={j} className="text-[10px] bg-slate-50 text-slate-500 px-2 py-1 rounded-md font-medium">{tag}</span>
+                  <span key={j} className="text-xs bg-slate-50 text-slate-600 px-2 py-1 rounded-md">{tag}</span>
                 ))}
-              </div>
-
-              <div className="flex items-center gap-2 text-[#204782] font-bold text-sm cursor-pointer group/link">
-                Learn More <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
               </div>
             </div>
           ))}
